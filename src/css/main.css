@@ -11,11 +11,15 @@
 }
 
 a.link {
-  @apply border-b-gray-500 border-b hover:text-cyan-700 hover:border-b-cyan-700;
+  @apply border-b-gray-500 border-b hover:text-cyan-700 hover:border-b-sky-700 transition-colors duration-300;
 }
 
 .pill {
   @apply px-3 border border-current rounded-full shadow;
+}
+
+.pill a {
+  @apply hover:text-cyan-700;
 }
 
 .pill-small {
