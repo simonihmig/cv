@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h2 {
+  @apply text-3xl mb-4 mt-16;
+}
+
+.h3 {
+  @apply text-xl mb-2 mt-4;
+}
+
+a.link {
+  @apply border-b-gray-500 border-b hover:text-cyan-700 hover:border-b-cyan-700;
+}
+
+.pill {
+  @apply px-3 border border-current rounded-full shadow;
+}
+
+.pill-small {
+  @apply text-xs text-gray-500 px-1.5 border border-current rounded-full;
+}
