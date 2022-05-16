@@ -5,11 +5,13 @@
   "license": "proprietary",
   "author": "Simon Ihmig",
   "scripts": {
-    "build": "tailwindcss -i ./src/css/main.css -o ./dist/main.css",
-    "start": "tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "parcel": "^2.5.0",
+    "postcss": "^8.4.13",
     "tailwindcss": "^3.0.24"
   },
   "volta": {
