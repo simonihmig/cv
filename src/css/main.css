@@ -15,7 +15,7 @@ a.link {
 }
 
 .pill {
-  @apply px-3 border border-current rounded-full shadow;
+  @apply px-3 border border-current rounded-full shadow print:shadow-none;
 }
 
 .pill a {
