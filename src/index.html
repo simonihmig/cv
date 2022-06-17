@@ -13,7 +13,7 @@
 
 <body class="bg-page bg-no-repeat bg-top bg-[length:1200px] sm:bg-contain">
 
-<header class="p-4 shadow mb-4 fixed w-full bg-white bg-opacity-70 backdrop-blur-sm">
+<header class="p-4 shadow mb-4 fixed print:static w-full bg-white bg-opacity-70 backdrop-blur-sm">
   <div class="max-w-7xl mx-auto flex items-center justify-between gap-3">
     <h1 class="text-xl md:text-2xl shrink-0 pl-4">Simon Ihmig</h1>
 
@@ -54,7 +54,7 @@
 
 <main class="max-w-7xl mx-auto p-4">
 
-  <section class="mt-32">
+  <section class="mt-24 print:mt-0">
     <h2 class="h2">Hey! 👋</h2>
 
     <p class="mb-4">
@@ -86,7 +86,7 @@
     <h2 class="h2">Education</h2>
 
     <ul>
-      <li>
+      <li class="break-inside-avoid">
         <span class="text-gray-500 text-sm">1996 - 2007</span><br>
         <strong>German University degree &quot;Diplom Informatiker&quot;</strong>
         (<a href="https://en.wikipedia.org/wiki/Diploma#Germany_and_the_German_academic_education_system_in_Europe" class="link">equivalent to M.S. in Computer Science</a>)<br>
@@ -99,25 +99,25 @@
     <h2 class="h2">Career</h2>
 
     <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2003 - now</span><br>
         <a href="https://www.kaliber5.de/en" class="link"><strong>kaliber5 GmbH</strong></a><br>
         Co-founder, managing director, CTO. Web agency, evolved from general web services (Webdesign, Web development, CMS, e-Commerce) to a specialized web app development shop, focusing on 3D product configurators.
       </li>
 
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2016 - 2021</span><br>
         <a href="https://www.thelocalwater.com/de" class="link"><strong>The Local Water</strong></a><br>
         Co-founder, CTO. Spin-Off company selling and building a brand around water filters.
       </li>
 
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2009 - 2019</span><br>
         <a href="https://www.amodoro.de" class="link"><strong>Amodoro GmbH</strong></a><br>
         Co-founder, managing director, CTO. Spin-Off company for wedding and engagement rings, based on online marketing concept featuring the first high-quality ring configurator in Germany.
       </li>
 
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">1998 - 2003</span><br>
         <strong>cyberworx GbR</strong><br>
         Co-founder, part-time business offering basic web services to local companies.
@@ -128,87 +128,98 @@
   <section class="my-16">
     <h2 class="h2">Skills</h2>
 
-    <h3 class="h3">Frontend</h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill">JavaScript</li>
-      <li class="pill">TypeScript</li>
-      <li class="pill">HTML</li>
-      <li class="pill">CSS</li>
-      <li class="pill">Sass</li>
-      <li class="pill">Ember.js</li>
-      <li class="pill">PWA</li>
-      <li class="pill">WebGL</li>
-      <li class="pill">three.js</li>
-      <li class="pill">Babylon.js</li>
-      <li class="pill">D3</li>
-      <li class="pill">Orbit.js</li>
-      <li class="pill">Redux</li>
-    </ul>
+    <div class="break-inside-avoid">
+      <h3 class="h3">Frontend</h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill">JavaScript</li>
+        <li class="pill">TypeScript</li>
+        <li class="pill">HTML</li>
+        <li class="pill">CSS</li>
+        <li class="pill">Sass</li>
+        <li class="pill">Ember.js</li>
+        <li class="pill">PWA</li>
+        <li class="pill">WebGL</li>
+        <li class="pill">three.js</li>
+        <li class="pill">Babylon.js</li>
+        <li class="pill">D3</li>
+        <li class="pill">Orbit.js</li>
+        <li class="pill">Redux</li>
+      </ul>
+    </div>
 
-    <h3 class="h3">Backend</h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill">PHP</li>
-      <li class="pill">Node.js</li>
-      <li class="pill">Symfony</li>
-      <li class="pill">Zend Framework</li>
-      <li class="pill">Express.js</li>
-      <li class="pill">Sylius</li>
-      <li class="pill">API-Platform</li>
-      <li class="pill">MySQL</li>
-      <li class="pill">Redis</li>
-    </ul>
+    <div class="break-inside-avoid">
+      <h3 class="h3">Backend</h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill">PHP</li>
+        <li class="pill">Node.js</li>
+        <li class="pill">Symfony</li>
+        <li class="pill">Zend Framework</li>
+        <li class="pill">Express.js</li>
+        <li class="pill">Sylius</li>
+        <li class="pill">API-Platform</li>
+        <li class="pill">MySQL</li>
+        <li class="pill">Redis</li>
+      </ul>
+    </div>
 
-    <h3 class="h3">Testing</h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill">TDD</li>
-      <li class="pill">BDD</li>
-      <li class="pill">QUnit</li>
-      <li class="pill">Mocha</li>
-      <li class="pill">Jest</li>
-      <li class="pill">ember-bdd</li>
-      <li class="pill">Behat</li>
-      <li class="pill">PHPUnit</li>
-      <li class="pill">PHPSpec</li>
-    </ul>
+    <div class="break-inside-avoid">
+      <h3 class="h3">Testing</h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill">TDD</li>
+        <li class="pill">BDD</li>
+        <li class="pill">QUnit</li>
+        <li class="pill">Mocha</li>
+        <li class="pill">Jest</li>
+        <li class="pill">ember-bdd</li>
+        <li class="pill">Behat</li>
+        <li class="pill">PHPUnit</li>
+        <li class="pill">PHPSpec</li>
+      </ul>
+    </div>
 
-    <h3 class="h3">DevOps</h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill">Linux</li>
-      <li class="pill">Apache</li>
-      <li class="pill">NGinx</li>
-      <li class="pill">Docker</li>
-      <li class="pill">AWS</li>
-      <li class="pill">Github Actions</li>
-      <li class="pill">Bitbucket Pipelines</li>
-      <li class="pill">Bamboo</li>
-      <li class="pill">Jenkins</li>
-    </ul>
+    <div class="break-inside-avoid">
+      <h3 class="h3">DevOps</h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill">Linux</li>
+        <li class="pill">Apache</li>
+        <li class="pill">NGinx</li>
+        <li class="pill">Docker</li>
+        <li class="pill">AWS</li>
+        <li class="pill">Github Actions</li>
+        <li class="pill">Bitbucket Pipelines</li>
+        <li class="pill">Bamboo</li>
+        <li class="pill">Jenkins</li>
+      </ul>
+    </div>
 
-    <h3 class="h3">Ember <span class="text-gray-500 text-sm">(topics of special interest)</span></h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill">Embroider</li>
-      <li class="pill">v2 addons</li>
-      <li class="pill">Glint</li>
-      <li class="pill">Codemods</li>
-      <li class="pill">declarative 3D</li>
-      <li class="pill">Performance</li>
-    </ul>
+    <div class="break-inside-avoid">
+      <h3 class="h3">Ember <span class="text-gray-500 text-sm">(topics of special interest)</span></h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill">Embroider</li>
+        <li class="pill">v2 addons</li>
+        <li class="pill">Glint</li>
+        <li class="pill">Codemods</li>
+        <li class="pill">declarative 3D</li>
+        <li class="pill">Performance</li>
+      </ul>
+    </div>
 
-    <h3 class="h3">Other</h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill">Agile</li>
-      <li class="pill">Scrum</li>
-      <li class="pill">Kanban</li>
-      <li class="pill">Lean UX</li>
-    </ul>
-
+    <div class="break-inside-avoid">
+      <h3 class="h3">Other</h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill">Agile</li>
+        <li class="pill">Scrum</li>
+        <li class="pill">Kanban</li>
+        <li class="pill">Lean UX</li>
+      </ul>
+    </div>
   </section>
 
   <section class="my-16">
     <h2 class="h2">Projects <span class="text-gray-500 text-sm">(excerpt)</span></h2>
 
     <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2021 - 2022 | PO, Lead Architect &amp; Developer</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -230,10 +241,8 @@
           </ul>
         </div>
       </li>
-    </ul>
 
-    <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2019 - 2022 | PM, Lead Architect &amp; Developer</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -253,10 +262,8 @@
           </ul>
         </div>
       </li>
-    </ul>
 
-    <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2019 - 2022 | Lead Architect &amp; Developer</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -273,10 +280,8 @@
           </ul>
         </div>
       </li>
-    </ul>
 
-    <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2016 - 2020 | Lead Architect &amp; Developer</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -298,10 +303,8 @@
           </ul>
         </div>
       </li>
-    </ul>
 
-    <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2018 - 2019 | Lead Architect &amp; Developer (Frontend)</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -317,10 +320,8 @@
           </ul>
         </div>
       </li>
-    </ul>
 
-    <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2017 - 2022 | Lead Architect &amp; Developer</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -339,10 +340,8 @@
           </ul>
         </div>
       </li>
-    </ul>
 
-    <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2014 - 2016 | PM, Lead Architect &amp; Developer</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -360,10 +359,8 @@
           </ul>
         </div>
       </li>
-    </ul>
 
-    <ul>
-      <li class="my-4">
+      <li class="my-4 break-inside-avoid">
         <span class="text-gray-500 text-sm">2015 - 2016 | Lead Architect &amp; Developer</span><br>
         <div class="flex flex-wrap justify-between items-start gap-3">
           <div>
@@ -387,43 +384,48 @@
   <section class="my-16">
     <h2 class="h2">Open Source contributions</h2>
 
-    <h3 class="h3">Author and/or maintainer <span class="text-gray-500 text-sm">(excerpt)</span></h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill"><a href="https://github.com/kaliber5/ember-bootstrap">ember-bootstrap</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-responsive-image">ember-responsive-image</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-stargate">ember-stargate</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-window-mock">ember-window-mock</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-embedded-snippet">ember-embedded-snippet</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-loading">ember-loading</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-ecsy-babylon">ember-ecsy-babylon</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ecsy-babylon">ecsy-babylon</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-cli-deploy-cloudformation">ember-cli-deploy-cloudformation</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-cli-bundle-analyzer">ember-cli-bundle-analyzer</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-cli-bundlesize">ember-cli-bundlesize</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/ember-behave">ember-behave</a></li>
-      <li class="pill"><a href="https://github.com/ember-polyfills/ember-in-element-polyfill">ember-in-element-polyfill</a></li>
-      <li class="pill"><a href="https://github.com/ember-codemods/ember-test-helpers-codemod">ember-test-helpers-codemod</a></li>
-      <li class="pill"><a href="https://github.com/simonihmig/tracked-redux">tracked-redux</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/action-update-release">action-update-release</a></li>
-      <li class="pill"><a href="https://github.com/kaliber5/gltf-toolbox">gltf-toolbox</a></li>
-      <li class="pill"><a href="https://github.com/embroider-build/addon-blueprint">embroider-build/addon-blueprint</a></li>
-    </ul>
 
-    <h3 class="h3">Other significant contributions <span class="text-gray-500 text-sm">(excerpt)</span></h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill"><a href="https://github.com/emberjs/ember.js/pulls?q=is%3Apr+author%3Asimonihmig+is%3Aclosed">Ember.js 58 PRs</a></li>
-      <li class="pill"><a href="https://github.com/embroider-build/embroider/pulls?q=is%3Apr+author%3Asimonihmig+is%3Aclosed">Embroider 31 PRs</a></li>
-    </ul>
+    <div class="break-inside-avoid">
+      <h3 class="h3">Author and/or maintainer <span class="text-gray-500 text-sm">(excerpt)</span></h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill"><a href="https://github.com/kaliber5/ember-bootstrap">ember-bootstrap</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-responsive-image">ember-responsive-image</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-stargate">ember-stargate</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-window-mock">ember-window-mock</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-embedded-snippet">ember-embedded-snippet</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-loading">ember-loading</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-ecsy-babylon">ember-ecsy-babylon</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ecsy-babylon">ecsy-babylon</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-cli-deploy-cloudformation">ember-cli-deploy-cloudformation</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-cli-bundle-analyzer">ember-cli-bundle-analyzer</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-cli-bundlesize">ember-cli-bundlesize</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/ember-behave">ember-behave</a></li>
+        <li class="pill"><a href="https://github.com/ember-polyfills/ember-in-element-polyfill">ember-in-element-polyfill</a></li>
+        <li class="pill"><a href="https://github.com/ember-codemods/ember-test-helpers-codemod">ember-test-helpers-codemod</a></li>
+        <li class="pill"><a href="https://github.com/simonihmig/tracked-redux">tracked-redux</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/action-update-release">action-update-release</a></li>
+        <li class="pill"><a href="https://github.com/kaliber5/gltf-toolbox">gltf-toolbox</a></li>
+        <li class="pill"><a href="https://github.com/embroider-build/addon-blueprint">embroider-build/addon-blueprint</a></li>
+      </ul>
+    </div>
 
-    <h3 class="h3">RFCs</h3>
-    <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
-      <li class="pill"><a href="https://emberjs.github.io/rfcs/0294-optional-jquery.html">RFC294 Optional jQuery</a></li>
-      <li class="pill"><a href="https://emberjs.github.io/rfcs/0386-remove-jquery.html">RFC386 Remove jQuery</a></li>
-      <li class="pill"><a href="https://emberjs.github.io/rfcs/0486-deprecate-mouseenter.html">RFC486 Deprecate Mouseenter</a></li>
-      <li class="pill"><a href="https://github.com/emberjs/rfcs/pull/784">RFC784 no-globals</a></li>
-    </ul>
+    <div class="break-inside-avoid">
+      <h3 class="h3">Other significant contributions <span class="text-gray-500 text-sm">(excerpt)</span></h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill"><a href="https://github.com/emberjs/ember.js/pulls?q=is%3Apr+author%3Asimonihmig+is%3Aclosed">Ember.js 58 PRs</a></li>
+        <li class="pill"><a href="https://github.com/embroider-build/embroider/pulls?q=is%3Apr+author%3Asimonihmig+is%3Aclosed">Embroider 31 PRs</a></li>
+      </ul>
+    </div>
 
-
+    <div class="break-inside-avoid">
+      <h3 class="h3">RFCs</h3>
+      <ul class="flex flex-wrap gap-3 text-sm text-gray-500">
+        <li class="pill"><a href="https://emberjs.github.io/rfcs/0294-optional-jquery.html">RFC294 Optional jQuery</a></li>
+        <li class="pill"><a href="https://emberjs.github.io/rfcs/0386-remove-jquery.html">RFC386 Remove jQuery</a></li>
+        <li class="pill"><a href="https://emberjs.github.io/rfcs/0486-deprecate-mouseenter.html">RFC486 Deprecate Mouseenter</a></li>
+        <li class="pill"><a href="https://github.com/emberjs/rfcs/pull/784">RFC784 no-globals</a></li>
+      </ul>
+    </div>
 
   </section>
 

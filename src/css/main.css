@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .h2 {
-  @apply text-3xl mb-4 mt-16;
+  @apply text-3xl mb-4 mt-16 print:mt-8;
 }
 
 .h3 {

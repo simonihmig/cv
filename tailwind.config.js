@@ -4,6 +4,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         page: "url('../img/bg.jpg')",
+      },
+      screens: {
+        'print': { 'raw': 'print' },
       }
     },
   },
